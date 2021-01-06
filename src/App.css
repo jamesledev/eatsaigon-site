@@ -29,8 +29,8 @@ body {
   color: black;
 }
 .logo {
-  max-width: 120px;
-  margin: 20px;
+  max-width: 160px;
+  margin: 30px 20px;
 }
 .icons {
   display: flex;
@@ -69,10 +69,11 @@ body {
 }
 .storyLogo {
   max-width: 200px;
+  margin: 30px 20px;
 }
 .textBox {
   display: flex;
-  width: 500px;
+  width: 700px;
   flex-direction: column;
 }
 .storyContainer,
@@ -105,10 +106,18 @@ body {
   height: 500px;
   object-fit: cover;
 }
+.LunchMenu {
+  display: inline-block;
+  margin-top: 20px;
+}
+.DinnerMenu {
+  display: none;
+  margin-top: 20px;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navContainer li {
-    margin: 5px;
+    margin: 0px;
     width: 100px;
   }
   .navContainer li a {
@@ -117,7 +126,7 @@ body {
   }
   .logo {
     max-width: 80px;
-    margin: 5px;
+    margin: 10px 5px;
   }
   .icons {
     display: flex;
@@ -130,5 +139,17 @@ body {
   .ig,
   .twitter {
     max-width: 30px;
+    margin: 5px;
+  }
+  .mapContainer iframe {
+    width: 600px;
+  }
+  .menu .react-pdf__Page__svg {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .menu svg {
+    width: 100% !important;
+    height: auto !important;
   }
 }

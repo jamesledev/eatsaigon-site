@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import Logo from '../images/logo.svg';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import Logo from '../images/logo.png';
 import Ig from '../images/instagram.png';
 import Twitter from '../images/twitter.png';
 

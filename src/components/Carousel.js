@@ -9,7 +9,7 @@ import Rice from '../images/food/rice.jpg';
 import Udon from '../images/food/udon.jpg';
 import Prawns from '../images/food/prawns.jpg';
 import Salad from '../images/food/salad.jpg';
-const handleDragStart = (e) => e.preventDefault();
+
 const items = [
   <img src={Bun} className="foodPics" alt="" />,
   <img src={Pho} className="foodPics" alt="" />,
