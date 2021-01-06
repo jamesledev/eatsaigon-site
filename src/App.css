@@ -1,38 +1,134 @@
-.App {
+body {
   text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.logoLinks {
+  display: flex;
+}
+.navButtons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+.navContainer li {
+  margin: 20px 40px;
+  width: 100px;
+}
+.navContainer li a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  max-width: 120px;
+  margin: 20px;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  flex-grow: 2;
+}
+.ig,
+.twitter {
+  max-width: 50px;
+  margin: 20px;
+}
+.backgroundPicHome {
+  background-image: url('./images/springroll.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeText {
+  color: rgb(255, 255, 255);
+  background: rgba(139, 139, 139, 0.1);
+  border-radius: 25px;
+}
+.homeText h1 {
+  font-size: 2.5em;
+  margin: 10px;
+}
+.storyLogo {
+  max-width: 200px;
+}
+.textBox {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+}
+.storyContainer,
+.locationContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.locationContainer {
+  margin: 50px;
+}
+.navButtonHome {
+  padding: 0;
+}
+.navButtonHome a {
+  text-decoration: none;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.background {
+  background-color: #e4dbd4;
+}
+.pictureCarousel {
+  height: 500px;
+  padding: 100px 0;
+}
+.foodPics {
+  width: auto;
+  height: 500px;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .navContainer li {
+    margin: 5px;
+    width: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  .navContainer li a {
+    text-decoration: none;
+    color: black;
+  }
+  .logo {
+    max-width: 80px;
+    margin: 5px;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    flex-grow: 2;
+    height: 150px;
+  }
+  .ig,
+  .twitter {
+    max-width: 30px;
   }
 }
